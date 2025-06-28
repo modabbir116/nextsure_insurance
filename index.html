@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NextSure Insurance</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="./css/media.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">NextSure</div>
+    <!-- ADD IT RIGHT HERE -->
+     <button class="menu-btn" onclick="toggleMenu()" aria-label="Toggle menu">
+    <!-- ADD IT RIGHT HERE -->
+    <!-- Navigation items -->
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li class="dropdown">
+        <a href="#">Products</a>
+        <ul class="submenu">
+          <li><a href="travel.html">Travel Insurance</a></li>
+          <li><a href="fire.html">Fire Insurance</a></li>
+          <li><a href="marine.html">Marine Insurance</a></li>
+          <li><a href="car.html">Car Insurance</a></li>
+        </ul>
+      </li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+     <!-- Navigation items -->
+    <button onclick="openPayment()" class="pay-btn">💳 Pay Now</button>
+  </nav>
+
+  <!-- Banner Section -->
+  <header class="hero">
+    <div class="hero-text">
+      <h1>Protecting Your Future, Today</h1>
+      <p>Trusted Insurance for Every Journey</p>
+      <a href="payment.html" class="btn">Make a Payment</a>
+    </div>
+  </header>
+
+  <!-- Our Products -->
+  <section class="section">
+    <h2 class="section-title">Our Products</h2>
+    <div class="product-grid">
+      <a href="travel.html" class="product-card" style="background-image: url('images/travel.jpg')">
+        <div class="overlay"><h3>Travel Insurance</h3></div>
+      </a>
+      <a href="fire.html" class="product-card" style="background-image: url('images/fire.jpg')">
+        <div class="overlay"><h3>Fire Insurance</h3></div>
+      </a>
+      <a href="marine.html" class="product-card" style="background-image: url('images/marine.jpg')">
+        <div class="overlay"><h3>Marine Insurance</h3></div>
+      </a>
+      <a href="car.html" class="product-card" style="background-image: url('images/care.jpg')">
+        <div class="overlay"><h3>Care Insurance</h3></div>
+      </a>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="section gray">
+    <h2 class="section-title">How NextSure Works</h2>
+    <div class="steps">
+      <div class="step">
+        <span>1</span>
+        <p>Choose your insurance plan</p>
+      </div>
+      <div class="step">
+        <span>2</span>
+        <p>Submit your documents securely</p>
+      </div>
+      <div class="step">
+        <span>3</span>
+        <p>Pay easily and get insured instantly</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Policies -->
+  <section class="section">
+    <h2 class="section-title">Featured Policies</h2>
+    <div class="featured-grid">
+      <div class="featured-card">
+        <img src="images/featured1.jpg" alt="Policy 1" />
+        <h4>HomeGuard Basic</h4>
+        <p>Affordable home and property protection</p>
+      </div>
+      <div class="featured-card">
+        <img src="images/featured2.jpg" alt="Policy 2" />
+        <h4>NextCare Max</h4>
+        <p>Fast health claims and family protection</p>
+      </div>
+      <div class="featured-card">
+        <img src="images/featured3.jpg" alt="Policy 3" />
+        <h4>Traveler Secure+</h4>
+        <p>Coverage for global adventures</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="section blue">
+    <h2 class="section-title">Why Choose NextSure?</h2>
+    <div class="features">
+      <div class="feature">
+        <h4>📞 24/7 Customer Support</h4>
+        <p>We’re here whenever you need us</p>
+      </div>
+      <div class="feature">
+        <h4>⚡ Fast Claims</h4>
+        <p>Zero paper delays. Just results.</p>
+      </div>
+      <div class="feature">
+        <h4>🌐 Trusted Network</h4>
+        <p>Global reach with local care</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 NextSure Insurance. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

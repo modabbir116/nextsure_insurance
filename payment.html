@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Payment - NextSure Insurance</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="./css/media.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">NextSure</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="#">Products</a>
+        <ul class="submenu">
+          <li><a href="travel.html">Travel Insurance</a></li>
+          <li><a href="fire.html">Fire Insurance</a></li>
+          <li><a href="marine.html">Marine Insurance</a></li>
+          <li><a href="care.html">Care Insurance</a></li>
+        </ul>
+      </li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Payment Section -->
+  <section class="section">
+    <h2 class="section-title">Make a Payment</h2>
+    <form class="contact-form" onsubmit="return submitPayment();">
+      <input type="text" id="policyId" placeholder="Policy Number" required />
+      <select id="paymentType" required>
+        <option value="">Select Payment Type</option>
+        <option>New Purchase</option>
+        <option>Renewal</option>
+        <option>Claim Fee</option>
+      </select>
+      <input type="number" id="amount" placeholder="Amount (BDT)" required />
+
+      <select id="method" required>
+        <option value="">Payment Method</option>
+        <option>bKash</option>
+        <option>Nagad</option>
+        <option>SSLCOMMERZ</option>
+        <option>Card (Visa/MasterCard)</option>
+      </select>
+
+      <button type="submit">Confirm Payment</button>
+    </form>
+  </section>
+
+  <!-- Confirmation -->
+  <section class="section gray" id="confirmation" style="display:none;">
+    <h3>✅ Thank you!</h3>
+    <p>Your payment has been received successfully. A receipt has been sent to your email.</p>
+    <a href="index.html" class="btn">Return to Home</a>
+  </section>
+
+  <footer>
+    <p>© 2025 NextSure Insurance. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function submitPayment() {
+      const form = document.querySelector('.contact-form');
+      const confirmation = document.getElementById('confirmation');
+      form.style.display = 'none';
+      confirmation.style.display = 'block';
+      return false; // prevent actual submission
+    }
+  </script>
+
+</body>
+</html>
