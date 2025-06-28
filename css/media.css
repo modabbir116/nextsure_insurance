@@ -1,17 +1,12 @@
-/* Smartphones (≤ 480px) */
-@media (max-width: 480px) {
-  .hero-text h1 {
-    font-size: 1.6rem;
-  }
-
+@media (max-width: 768px) {
   .nav-links {
     display: none;
     flex-direction: column;
-    background-color: #004080;
     position: absolute;
     top: 60px;
     left: 0;
     width: 100%;
+    background-color: #004080;
     text-align: center;
     padding: 1rem 0;
   }
@@ -22,19 +17,74 @@
 
   .menu-btn {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 22px;
+    background: none;
+    border: none;
+    cursor: pointer;
   }
 
-  .product-grid,
-  .featured-grid {
+  .menu-btn .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 2px;
+  }
+}
+/* Smartphones (≤ 480px) */
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .product-grid {
     grid-template-columns: 1fr;
+  }
+
+  .featured-grid {
     flex-direction: column;
+    align-items: stretch;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .pay-btn {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
   }
 }
 
 /* Tablets (≤ 768px) */
 @media (max-width: 768px) {
+  .hero-text {
+    padding: 1rem;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .steps {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .navbar {
     flex-wrap: wrap;
+    padding: 1rem;
   }
 
   .logo {
@@ -43,27 +93,12 @@
     margin-bottom: 1rem;
   }
 
-  .steps,
-  .features {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .menu-btn {
-    display: flex;
-  }
-
-  .nav-links {
-    display: none;
-  }
-
-  .nav-links.show {
-    display: flex;
-    flex-direction: column;
+  .pay-btn {
+    margin-top: 0.5rem;
   }
 }
 
-/* Laptops (≤ 1024px) */
+/* Small Laptops (≤ 1024px) */
 @media (max-width: 1024px) {
   .product-grid {
     grid-template-columns: repeat(2, 1fr);

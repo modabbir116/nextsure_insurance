@@ -2,10 +2,10 @@
 function openPayment() {
   window.location.href = "payment.html";
 }
-function toggleMenu() {
-  document.querySelector('.nav-links').classList.toggle('show');
-  document.querySelector('.menu-btn').classList.toggle('active');
-}
+// function toggleMenu() {
+//   document.querySelector('.nav-links').classList.toggle('show');
+//   document.querySelector('.menu-btn').classList.toggle('active');
+// }
 
 // Optional: Close submenu on mobile tap (for better UX)
 document.querySelectorAll(".nav-links .dropdown > a").forEach(link => {
