@@ -4,6 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>NextSure Insurance</title>
+  <!-- Font awesome -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Font awesome -->
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="./css/media.css">
 </head>
@@ -11,9 +14,6 @@
   <!-- Navigation -->
   <nav class="navbar">
     <div class="logo">NextSure</div>
-    <!-- ADD IT RIGHT HERE -->
-     <button class="menu-btn" onclick="toggleMenu()" aria-label="Toggle menu">
-    <!-- ADD IT RIGHT HERE -->
     <!-- Navigation items -->
     <ul class="nav-links">
       <li><a href="#">Home</a></li>
@@ -31,9 +31,15 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
      <!-- Navigation items -->
-    <button onclick="openPayment()" class="pay-btn">💳 Pay Now</button>
+    <div class="social">
+      <h3><a href="https://www.facebook.com/Nextsure.xyz"><i class="fa-brands fa-facebook"></i></a></h3>
+    </div>
   </nav>
-
+  <!-- replace here  -->
+   <div class="replace">
+    <p><i class="fa-solid fa-phone"></i> Contact Here <a href="tel:+880161276954">+880161276954</a></p>
+   </div>
+  <!-- replace here  -->
   <!-- Banner Section -->
   <header class="hero">
     <div class="hero-text">
@@ -47,16 +53,16 @@
   <section class="section">
     <h2 class="section-title">Our Products</h2>
     <div class="product-grid">
-      <a href="travel.html" class="product-card" style="background-image: url('images/travel.jpg')">
+      <a href="travel.html" class="product-card" style="background-image: url('/images/travel_insurance.webp')">
         <div class="overlay"><h3>Travel Insurance</h3></div>
       </a>
-      <a href="fire.html" class="product-card" style="background-image: url('images/fire.jpg')">
+      <a href="fire.html" class="product-card" style="background-image: url('images/fire_insurance.webp')">
         <div class="overlay"><h3>Fire Insurance</h3></div>
       </a>
-      <a href="marine.html" class="product-card" style="background-image: url('images/marine.jpg')">
+      <a href="marine.html" class="product-card" style="background-image: url('images/marine_insurance.jpeg')">
         <div class="overlay"><h3>Marine Insurance</h3></div>
       </a>
-      <a href="car.html" class="product-card" style="background-image: url('images/care.jpg')">
+      <a href="car.html" class="product-card" style="background-image: url('images/car_insurance.jpg')">
         <div class="overlay"><h3>Care Insurance</h3></div>
       </a>
     </div>
